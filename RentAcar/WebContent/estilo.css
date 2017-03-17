@@ -1,0 +1,68 @@
+@CHARSET "ISO-8859-1";
+/*Cor de azul claro para o fundo*/
+body {
+    background-color: lightblue;
+}
+/*Padroniza os 3 headers usados*/
+h1 {
+    color: black;
+    text-align: center;
+}
+h2 {
+    color: black;
+    text-align: center;
+}
+h3 {
+    color: black;
+    text-align: center;
+}
+
+/*Define a fonte e o tamanho*/
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+/*Definições da tabela*/
+th {
+    text-align: center;
+    background-color: #4CAF50; /*Titulo da tabela em verde*/
+    color: white;
+}
+td {
+    height: 50px;
+    vertical-align: bottom;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+tr:nth-child(even) {background-color: #f2f2f2} /*Cria um efeito listrado na tabela entre 2 tons de azul*/
+
+/*Definições dos formularios*/
+input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px  #4CAF50;
+    border-radius: 4px;
+}
+input[type=text]:focus {
+    border: 3px solid #555; /*Muda a cor quando o campo está em foco*/
+}
+/*Defineções dos botões dos formularios*/
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/*Muda um pouco a cor dos botoes quando estão sob o mouse*/
+input[type=button]:hover,input[type=submit]:hover{
+	background-color: #2E6830; /*Verde escuro*/
+    color: white;
+}

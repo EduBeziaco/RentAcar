@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' href='estilo.css'>
+<meta charset="ISO-8859-1">
+<title>Cadastro de veiculo!</title>
+</head>
+<body>
+<h1>Cadastro de novo Veiculo</h1><br/>
+<h2>Preencha o formulario a baixo.</h2><br/>
+<!--Cria um form na pagina para ler a informações do veiculo.
+    Usa o pattern para validar os campos explicado melhor no pdf
+-->
+ <form align='center' method="post" action="CadastrarCarro">
+      Modelo: <input type="text" name="modelo" required pattern="([A-z0-9\s]){2,}" /><br />
+      Ano de Fabricação:  <input type="number" name="ano" min="2000" max="2017" value="2017"><br />
+      Cor: <input type="text" name="cor" required pattern="([A-z\s]){2,}" /><br />
+      Placa: (Apenas 3 Letras MAIUSCULAS e apenas 4 Digitos!) 
+      <br/>Letras <input type="text" name="placa" required pattern="(?=.*[A-Z]){3}" /><br/>
+       Numeros <input type="text" name="placaN" required pattern="[0-9]{4}" /><br/>
+      Automatico : <input type="checkbox"  name="auto"> <br/>
+      Chassi: (Precisa conter os 17 Characteres.)
+      <br/><input type="text" name="chassi" required pattern="([A-z0-9]){17}" /><br />
+      <input type='hidden' name='editou' value='nao'/>
+      <input type="submit" value="Gravar" />
+    </form>
+</body>
+</html>
